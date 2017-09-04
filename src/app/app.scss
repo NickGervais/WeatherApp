@@ -1,8 +1,25 @@
 .home {
-    // background: color($colors, secondary);
-    // color: color($colors, light);
+    background: color($colors, secondary);
+    color: color($colors, light);
 }
 
 .toolbar-title {
     text-align: center;
 }
+
+.location,.icon,.desc,.temp {
+    text-align: center;
+}
+.location {
+    font-size: 30px;
+}
+.icon img {
+    width: 70px;
+}
+.desc {
+    font-size: 25px;
+}
+.temp{
+    font-size: 90px;
+}
+
