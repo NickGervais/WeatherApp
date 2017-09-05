@@ -29,18 +29,13 @@ export class SettingsPage {
       });
     }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad SettingsPage');
-  }
-
   saveForm(){
     let location = {
       city: this.city,
       state: this.state
     }
     this.storage.set('location', JSON.stringify(location));
-    this.navCtrl.push(HomePage);
-
+    this.navCtrl.parent.select(0);
   }
 
 }
