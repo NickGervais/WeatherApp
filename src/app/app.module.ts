@@ -5,8 +5,6 @@ import { MyApp } from './app.component';
 import { HttpModule } from '@angular/http';
 import { IonicStorageModule } from '@ionic/storage';
 
-import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { SettingsPage } from '../pages/settings/settings';
 import { TabsPage } from '../pages/tabs/tabs';
@@ -18,8 +16,6 @@ import { WeatherProvider } from '../providers/weather/weather';
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
-    ContactPage,
     HomePage,
     SettingsPage,
     TabsPage
@@ -33,8 +29,6 @@ import { WeatherProvider } from '../providers/weather/weather';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
-    ContactPage,
     HomePage,
     SettingsPage,
     TabsPage
