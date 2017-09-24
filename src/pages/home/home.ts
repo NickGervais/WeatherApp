@@ -13,6 +13,7 @@ export class HomePage {
     city:string,
     state: string
   }
+  firstLoad = true;
 
   constructor(
     public navCtrl: NavController,
@@ -22,6 +23,9 @@ export class HomePage {
   }
 
   ionViewWillEnter(){
+    this.loadWeather();
+  }
+  loadWeather(){
     this.storage.get('location').then((val) => {
       if(val) {
         this.location = JSON.parse(val);

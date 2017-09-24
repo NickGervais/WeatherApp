@@ -17,20 +17,26 @@
     <ion-row>
       <ion-col width-100>
         <ion-list>
-          <ion-item>
+          <ion-item *ngIf="weather.temperature_string">
             <strong>Temp: </strong> {{weather.temperature_string}}
           </ion-item>
-          <ion-item>
+          <ion-item *ngIf="weather.feelslike_string">
+            <strong>Feels Like: </strong> {{weather.feelslike_string}}
+          </ion-item>
+          <ion-item *ngIf="weather.relative_humidity">
             <strong>Relative Humidity: </strong> {{weather.relative_humidity}}
           </ion-item>
-          <ion-item>
+          <ion-item *ngIf="weather.dewpoint_string">
             <strong>Dewpoint: </strong> {{weather.dewpoint_string}}
           </ion-item>
-          <ion-item>
+          <ion-item *ngIf="weather.visibility_mi">
             <strong>Visibility: </strong> {{weather.visibility_mi}}
           </ion-item>
-          <ion-item>
+          <ion-item *ngIf="weather.heat_index_string">
             <strong>Heat Index: </strong> {{weather.heat_index_string}}
+          </ion-item>
+          <ion-item *ngIf="weather.wind_string">
+            <strong>Wind: </strong> {{weather.wind_string}}
           </ion-item>
         </ion-list>
       </ion-col>
